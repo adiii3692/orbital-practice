@@ -40,4 +40,20 @@ int main(){
     myCar.model = "Mustang";
 
     printf("I have a %s %s\n",myCar.brand,myCar.model);
+
+    
 }   
+
+typedef struct {
+    int a;
+    int b;
+} q10_t;
+
+enum error_t{
+    SUCCESS = 0,
+    FAIL = 1
+};
+
+enum error_t q10(q10_t *q10) {
+    q9((*q10).a,(*q10).b);
+}
